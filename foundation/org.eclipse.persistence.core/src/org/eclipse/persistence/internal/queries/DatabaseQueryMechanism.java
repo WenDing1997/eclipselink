@@ -1072,7 +1072,7 @@ public abstract class DatabaseQueryMechanism implements Cloneable, Serializable 
                         lockingPolicy.updateRowAndObjectForUpdate(writeQuery, object);
                     } else if (!shouldModifyVersionField && (lockingPolicy instanceof VersionLockingPolicy)) {
                         // Add the existing write lock value to the for a "read" lock (requires something to update).
-                        ((VersionLockingPolicy)lockingPolicy).writeLockValueIntoRow(writeQuery, object);
+//                        ((VersionLockingPolicy)lockingPolicy).writeLockValueIntoRow(writeQuery, object);
                     }
                 }
             }

@@ -24,6 +24,8 @@ import org.eclipse.persistence.exceptions.*;
 import org.eclipse.persistence.internal.localization.*;
 import org.eclipse.persistence.internal.queries.DatabaseQueryMechanism;
 import org.eclipse.persistence.descriptors.ClassDescriptor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 /**
  * This class maintains a commit stack and resolves circular references.

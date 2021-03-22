@@ -92,4 +92,4 @@ script:
   - $ANT_HOME/bin/ant -f antbuild.xml build
   - echo 'RUNNING TESTS, BE PATIENT...'
   - set -o pipefail
-  - $ANT_HOME/bin/ant -f antbuild.xml -Dtest.fail.fast=true -Dfail.on.error=true $TEST_TARGET"
+  - $ANT_HOME/bin/ant -f antbuild.xml -Dtest.fail.fast=true -Dfail.on.error=true $TEST_TARGET
